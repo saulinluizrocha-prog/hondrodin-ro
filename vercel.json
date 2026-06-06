@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/land/order",
+      "dest": "/api/order"
+    },
+    {
+      "src": "/api.php",
+      "dest": "/api/order"
+    }
+  ]
+}
