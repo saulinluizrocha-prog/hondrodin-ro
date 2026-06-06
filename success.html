@@ -332,6 +332,41 @@
       font-weight: 700;
     }
 
+
+    /* ── MINI CORNER BADGES (inside hero) ── */
+    .hero-top-badges {
+      position: absolute;
+      top: 14px;
+      left: 0; right: 0;
+      padding: 0 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      z-index: 2;
+    }
+    .mini-distrib {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(245,158,11,.1);
+      border: 1px solid rgba(245,158,11,.25);
+      border-radius: 8px;
+      padding: 5px 10px;
+    }
+    .mini-distrib img { height: 20px; display: block; }
+    .mini-distrib span { font-size: 10px; font-weight: 700; color: var(--gold); white-space: nowrap; }
+    .mini-eu {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(14,165,233,.08);
+      border: 1px solid rgba(14,165,233,.22);
+      border-radius: 8px;
+      padding: 5px 10px;
+    }
+    .mini-eu .eu-emoji { font-size: 18px; line-height: 1; }
+    .mini-eu span { font-size: 10px; font-weight: 700; color: var(--blue); white-space: nowrap; }
+
     /* ── OFFICIAL DISTRIBUTOR ── */
     .distrib-section {
       margin-top: 24px;
@@ -433,6 +468,19 @@
 
   <!-- HERO -->
   <section class="hero">
+
+    <!-- MINI CORNER BADGES -->
+    <div class="hero-top-badges">
+      <div class="mini-distrib">
+        <img src="img/logo-main.png" alt="HondroDin" />
+        <span>Distribuitor Oficial</span>
+      </div>
+      <div class="mini-eu">
+        <span class="eu-emoji">🇪🇺</span>
+        <span>Certificat CE · UE</span>
+      </div>
+    </div>
+
     <div class="check-circle">
       <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
         <polyline points="20 6 9 17 4 12" />
@@ -531,31 +579,6 @@
           <div class="seal-icon">🚚</div>
           <div class="seal-txt">Livrare Rapidă în România</div>
         </div>
-        <div class="seal-item">
-          <div class="seal-icon">↩️</div>
-          <div class="seal-txt">Drept de Retur Garantat</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- EU SAFETY -->
-    <div class="eu-section">
-      <div class="eu-flag">🇪🇺</div>
-      <div class="eu-text">
-        <div class="title">Siguranță și eficacitate confirmate clinic</div>
-        <div class="desc">Produsul HondroDin respectă toate standardele de calitate și siguranță ale Uniunii Europene. Formula a fost testată și certificată pentru utilizare sigură.</div>
-        <div class="eu-badge-pill">✔ Certificat CE · Standarde UE</div>
-      </div>
-    </div>
-
-    <!-- OFFICIAL DISTRIBUTOR -->
-    <div class="distrib-section">
-      <div class="distrib-logo">
-        <img src="img/logo-main.png" alt="HondroDin Official" />
-      </div>
-      <div class="distrib-text">
-        <div class="title">Distribuitor Oficial HondroDin</div>
-        <div class="desc">Achiziționezi direct de la distribuitorul oficial autorizat în România. Produse originale, sigilate și cu garanție completă.</div>
       </div>
     </div>
 
